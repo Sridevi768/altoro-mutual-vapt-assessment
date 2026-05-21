@@ -50,3 +50,16 @@ To strengthen practical web application penetration testing skills through hands
 The complete vulnerability assessment report for the Altoro Mutual demo banking application is available below.
 
 [Download Report](altoro-mutual-vapt-report.pdf)
+## Cross-Site Request Forgery (CSRF)
+
+The screenshot below demonstrates a Cross-Site Request Forgery (CSRF) vulnerability where the application failed to implement adequate CSRF protection mechanisms. This allowed authenticated actions to be performed without user consent.
+
+![CSRF Vulnerability](csrf-vulnerability.png)
+![CSRF Vulnerability](CSRF-exploit-server.png)
+![CSRF Vulnerability](CSRF-burp-request.png)
+## Reflected Cross-Site Scripting (XSS)
+
+The screenshot below demonstrates a Reflected Cross-Site Scripting (XSS) vulnerability caused by improper sanitization and encoding of user-supplied input in the search parameter. A malicious JavaScript payload was reflected in the server response and executed in the browser.
+
+![Reflected XSS](reflected-xss-vulnerability.png)
+![Reflected XSS](Reflacted-xss.png)
